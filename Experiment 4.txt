@@ -1,0 +1,291 @@
+I a)Create a directory named lab1, move into it, create a file data.txt, write some content using echo, and        display it using cat. (Commands: mkdir, cd, echo, cat)
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ mkdir lab1
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cd lab1
+
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ echo "Linux Lab Experiment" > data.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cat data.txt                                      
+Linux Lab Experiment
+
+
+
+
+
+b)Display the last 10 lines of a file and count the number of empty lines. (Commands: tail, grep '^$')
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ tail -n 10 data.txt                               
+Linux Lab Experiment
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ grep '^$' data.txt | wc -l
+    0
+    
+    
+    
+
+c) Create a new user student1, set password, create a script file test.sh, change its ownership to student1, and grant execute permission only to the owner. (Commands: useradd, passwd, chown, chmod)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ sudo useradd student1                             
+[sudo] password for prathik: 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ sudo passwd student1                              
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ sudo touch test.sh                                
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ sudo chown student1 test.sh                       
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ sudo chmod 700 test.sh                            
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ls -l test.sh                                     
+-rwx------ 1 student1 root 0 Mar  6 14:44 test.sh
+
+
+
+
+
+
+
+II a) Create a file students.txt, insert multiple lines using cat, and display lines containing the word "MCA". (Commands: cat, grep)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cat > students.txt
+Prathik Bsc Mathematics
+Gautham Btech AI/ML
+Shyam MBBS
+Aseem MCA
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ grep "MCA" students.txt
+Aseem MCA
+
+
+
+
+
+b)Copy students.txt to backup.txt, rename it to final.txt, and delete the original file. (Commands: cp, mv, rm)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cp students.txt backup.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ mv backup.txt final.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ rm students.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ls
+data.txt  final.txt  test.sh
+
+
+
+
+
+c) Generate an SSH key pair and copy it to a remote system for password-less login. (Commands: ssh-keygen, ssh-copy-id, ssh)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/prathik/.ssh/id_ed25519): data.txt
+data.txt already exists.
+Overwrite (y/n)? Y
+Enter passphrase for "data.txt" (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in data.txt
+Your public key has been saved in data.txt.pub
+The key fingerprint is:
+SHA256:eYAWhnrZEd8FnaOPq6NhmO9Ul7qWP+fk57d4F30HRt4 prathik@kali
+The key's randomart image is:
++--[ED25519 256]--+
+|     .+.  .o..   |
+|    ...+ . .+ .  |
+|   . oo.o .. + . |
+|  . o..  o..  + E|
+|   .    S +o . ..|
+|     o . +. .  .+|
+|    o + .. ..   +|
+|     + .+.oo. o.o|
+|     .+oo+.+o+ooo|
++----[SHA256]-----+
+
+
+
+
+
+
+
+III a) Count the number of words and lines in a file, then display the first 5 lines. (Commands: wc, head)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ wc data.txt
+  8  14 444 data.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ head -n 5 data.txt
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABCDdevIn+
+Cm3aCG+KVhQQetAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAILqNkzkrk7cY8rQI
+IrGBzOwfKCaGZmplz88lKMf35OepAAAAkPeX95AI35G5+na1i5zHVxg0l9q/vd/0cyxREw
+p/CoB3mhwDw1EN7dJxfiN7syK4IJrIqjlwLBabXd4Q2zUHuyxyMzgvZqcGx2ndmtWXo/ov
+
+
+
+
+b)Create 3 files and compress them into archive.tar, then extract into a new directory. (Commands: touch, tar, mkdir
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ touch file1.txt file2.txt file3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ tar -cvf archive.tar file1.txt file2.txt file3.txtfile1.txt
+file2.txt
+file3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ mkdir extracted_files
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ tar -xvf archive.tar -C extracted_files
+file1.txt
+file2.txt
+file3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ls extracted_files                                
+file1.txt  file2.txt  file3.txt
+
+
+   
+c)Search for lines that start with "Error" and do not contain the word "critical". (Commands: grep '^Error', grep -v)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ grep '^Prathik' final.txt | grep -v "MCA"         
+Prathik Bsc Mathematics
+
+
+
+
+
+
+
+
+IV a) Create a file using echo, append additional content using redirection (>>), and display using less. (Commands: echo, >>, less)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ echo "Linux Operating System" > sample.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ echo "Shell Scripting Basics" >> sample.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ less sample.txt
+    output
+    Linux Operating System
+    Shell Scripting Basics (Press q to exit from less)
+    
+    
+    
+    
+b)Grant read and write permission to the group for final.txt, and verify permissions.(Commands: chmod, ls -l)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ chmod g+rw final.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ls -l final.txt
+-rw-rw-r-- 1 prathik prathik 67 Mar  6 14:58 final.txt
+
+
+
+
+
+c) Display running processes of the current logged-in user in detailed format and show disk usage in human-readable format.
+(Commands: ps, df -h)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ps -u $prathik -f
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+prathik    14876  0.0  0.1   8568  5352 pts/0    Ss   14:35   0:00 /bin/bash
+prathik    42476  0.0  0.0  10252  4844 pts/0    R+   15:23   0:00  \_ ps -u -f
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ df -h
+Filesystem        Size  Used Avail Use% Mounted on
+udev              2.3G     0  2.3G   0% /dev
+tmpfs             481M  988K  480M   1% /run
+/dev/sda1          65G   21G   42G  33% /
+tmpfs             2.4G  8.0K  2.4G   1% /dev/shm
+none              1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs             2.4G   16K  2.4G   1% /tmp
+Telegram_Desktop  476G  208G  268G  44% /media/sf_Telegram_Desktop
+none              1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs             481M  2.8M  478M   1% /run/user/1000
+
+
+
+
+
+
+
+V a) Find all .txt files in the current directory and show their details. (Commands: find, ls)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ find . -name "*.txt"
+./extracted_files/file3.txt
+./extracted_files/file1.txt
+./extracted_files/file2.txt
+./sample.txt
+./final.txt
+./file3.txt
+./file1.txt
+./data.txt
+./file2.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ ls -l *.txt
+-rw-rw-r-- 1 prathik prathik 444 Mar  6 15:00 data.txt
+-rw-rw-r-- 1 prathik prathik   0 Mar  6 15:09 file1.txt
+-rw-rw-r-- 1 prathik prathik   0 Mar  6 15:09 file2.txt
+-rw-rw-r-- 1 prathik prathik   0 Mar  6 15:09 file3.txt
+-rw-rw-r-- 1 prathik prathik  67 Mar  6 14:58 final.txt
+-rw-rw-r-- 1 prathik prathik  46 Mar  6 15:22 sample.txt
+
+
+
+
+
+b) Extract the first column from a file using cut, combine it with another file using paste, and save the output using redirection.(Commands: cut, paste, >)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cat > file1.txt                                                          
+1 Aditya
+2 Akshay
+3 Anjali
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cat > file2.txt
+MCA
+BCA
+MSc
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cut -d " " -f1 file1.txt                                                 
+1
+2
+3
+
+
+
+
+c) Monitor system processes using top, exit the command properly, then list current directory contents with detailed permissions. (Commands: top, ls -l)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cut -d " " -f1 file1.txt | paste - file2.txt > result.txt                
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/lab1]
+└─$ cat result.txt
+1       MCA
+2       BCA
+3       MSc

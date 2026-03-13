@@ -1,0 +1,992 @@
+1. man
+┌──(prathik㉿kali)-[~]
+└─$ man ls
+
+┌──(prathik㉿kali)-[~]
+└─$ man cp
+
+┌──(prathik㉿kali)-[~]
+└─$ man mkdir
+
+
+2. pwd
+┌──(prathik㉿kali)-[~]
+└─$ pwd
+/home/prathik
+
+
+3. ls
+┌──(prathik㉿kali)-[~]
+└─$ ls
+Desktop    Downloads  f5.txt  Pictures  reports    Videos
+Documents  f1.txt     Music   Public    Templates
+
+┌──(prathik㉿kali)-[~]
+└─$ ls -l
+total 44
+drwxr-xr-x 3 prathik prathik 4096 Feb 28 18:29 Desktop
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Documents
+drwxr-xr-x 3 prathik prathik 4096 Feb 15 17:20 Downloads
+-rw-rw-r-- 1 prathik prathik   12 Feb 28 18:21 f1.txt
+-rw-rw-r-- 1 prathik prathik   16 Feb 28 18:26 f5.txt
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Music
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Pictures
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Public
+drwxrwxr-x 2 prathik prathik 4096 Feb 14 23:54 reports
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Templates
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Videos
+
+
+
+┌──(prathik㉿kali)-[~]
+└─$ ls -a
+.                 Pictures
+..                .profile
+.bash_history     Public
+.bash_logout      reports
+.bashrc           .ssh
+.bashrc.original  .sudo_as_admin_successful
+.cache            Templates
+.config           .tor
+Desktop           .vboxclient-clipboard-tty7-control.pid
+.dmrc             .vboxclient-clipboard-tty7-service.pid
+Documents         .vboxclient-draganddrop-tty7-control.pid
+Downloads         .vboxclient-draganddrop-tty7-service.pid
+f1.txt            .vboxclient-hostversion-tty7-control.pid
+f5.txt            .vboxclient-seamless-tty7-control.pid
+.face             .vboxclient-seamless-tty7-service.pid
+.face.icon        .vboxclient-vmsvga-session-tty7-control.pid
+.gnupg            .vboxclient-vmsvga-session-tty7-service.pid
+.ICEauthority     Videos
+.java             .Xauthority
+.local            .xsession-errors
+.mozilla          .xsession-errors.old
+.msf4             .zprofile
+Music             .zshrc
+
+
+
+┌──(prathik㉿kali)-[~]
+└─$ ls /home/prathik/Desktop
+f1.txt  Prathik
+
+
+
+┌──(prathik㉿kali)-[~]
+└─$ ls -lt                                                                   
+total 44
+drwxr-xr-x 3 prathik prathik 4096 Feb 28 18:29 Desktop
+-rw-rw-r-- 1 prathik prathik   16 Feb 28 18:26 f5.txt
+-rw-rw-r-- 1 prathik prathik   12 Feb 28 18:21 f1.txt
+drwxr-xr-x 3 prathik prathik 4096 Feb 15 17:20 Downloads
+drwxrwxr-x 2 prathik prathik 4096 Feb 14 23:54 reports
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Documents
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Music
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Pictures
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Public
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Templates
+drwxr-xr-x 2 prathik prathik 4096 Feb 14 10:56 Videos
+
+
+
+4. echo
+┌──(prathik㉿kali)-[~]
+└─$ echo "Welcome Prathik"                                                   
+Welcome Prathik
+
+┌──(prathik㉿kali)-[~]
+└─$ echo -n "Enter your name:" Prathik                                       
+Enter your name: Prathik
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ echo "This is just for educational purpose" > f2.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat f2.txt                                                               
+This is just for educational purpose
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ more f2.txt                                                              
+This is just for educational purpose
+
+
+
+5. read
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ read varname                                                             
+Niranjan
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ echo $varname                                                            
+Niranjan
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ read a b
+prathik 23
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ echo $a $b                                                               
+prathik 23
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ read -p "Enter your dob:" na                                             
+Enter your dob:14-07-1999
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ echo $na                                                                 
+14-07-1999
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ echo "your dob:" $na
+your dob: 14-07-1999
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ read -n 3 code                                                           
+Pra
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ echo $code
+Pra
+
+
+
+6. cat
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat > f6.txt                                                             
+New file      
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat f6.txt                                                               
+New file 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat f2.txt f6.txt                                                        
+This is just for educational purpose
+New file 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat >> f6.txt                                                            
+
+read it carefully
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat f6.txt                                                               
+New file 
+
+read it carefully
+
+
+
+7. more
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ more f2.txt f6.txt
+::::::::::::::
+f2.txt
+::::::::::::::
+This is just for educational purpose
+::::::::::::::
+f6.txt
+::::::::::::::
+New file 
+
+read it carefully
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cd ..                                                                    
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ more +90 f1.txt
+
+Preface
+
+This book is a very basic introduction to data science. It is designed for th
+e advanced high school student or average college freshman with a high school
+-level understanding of math, science, word processing and spreadsheets. No u
+nderstanding of computer science is assumed. The main emphasis of this book i
+s to help students think about the world in data science terms. While some el
+ementary data science skills will be taught, the point is not skill developme
+nt, but rather critical thinking and problem solving development. These are s
+kills that can be successfully applied to all phases of life, not just data s
+cience.
+
+Data science--as a profession and as an academic discipline unto itself—is ne
+w, having been born in the first decade of the 21st century. It is a child bo
+rn of the mature parental disciplines of scientific methods, data and softwar
+e engineering, statistics, and visualization. This book is not intended to do
+ justice to any of those disciplines by themselves, but to bring them togethe
+r in a productive synthesis. As such, the student will be introduced to the p
+arent disciplines and then given exercises that will fuse the parental discip
+lines into data science. In addition, "hacking" in the original positive sens
+e of the term, is also a contributing parent to the data science child, even 
+though "hacking" is not taught as an academic discipline.
+
+Obviously, a mature data scientist will be proficient in each of the parent d
+isciplines, studying them individually and combining them to solve serious da
+ta problems. This text book is but just a first tentative step in that direct
+ion.
+
+Data science, as practiced today, arises out of the "big data/cloud computing
+" world and complexity science. This means data science is an advanced discip
+line, requiring proficiency in parallel processing, map-reduce computing, pet
+abyte-sized noSQL databases, machine learning, advanced statistics and comple
+xity science. In this sense, "true" data science is more appropriately taught
+ at the Master's and Doctorate level. We believe, however, that data science 
+is as much about mindset as it is about the skillful use of tools. Thus we wa
+nt to engage students early in their careers to start thinking holistically a
+bout data science. This textbook will not address the more advanced technolog
+ies and techniques of data science. It will, however, help students to start 
+thinking like a data scientist.
+
+In business and government today, data science is performed as teams. We want
+ the students in this class have that experience. Thus, all the homework, ass
+ignments, and exercises are designed for teams of 2 to 6 students. We hope th
+e students will have a chance to work with everyone else in the class over th
+e course of the semester. Most data scientists do not get to choose who they 
+work with, but must learn to work with whomever is assigned to their team.
+
+We will do most of our data manipulation, computer programming, and statistic
+al analysis in the open source R package. We know that intermediate or advanc
+ed students would use other tools such as MySQL, PHP, Python, Java, Hadoop, H
+Base, AllegroGraph, Mahout, MATLAB, SPSS, SAS, etc. For this introduction, ho
+wever, we are keeping it simple and sticking to just a single general purpose
+ computing environment.
+
+Finally, we try to use terms and concepts which are already defined in the Wi
+kipedia, Wiktionary, and Wikiversity. This way people can refer to the corres
+ponding Wikipedia/Wiktionary page to get a deeper understanding of the concep
+t.
+Stages
+
+In the table of contents on the right side of the page, you will notice there
+ is a little box of four squares. The box indicates the maturity of the chapt
+er. For example,
+
+
+Wikibook Development Stages
+Sparse text 0%  Developing text 25%     Maturing text 50%       Developed tex
+t 75%   Comprehensive text 100%
+Note to Instructors
+
+We have designed this text for a 16-week 3-credit class. That is, a class tha
+t has three classroom-hours of instruction for 16 weeks—for example, 48 1-hou
+r class periods. There are 32 chapters, which allows for—averaged over the se
+mester—one day a week for student project presentations, for reviews and help
+ sessions, and for testing. We image that there will be more lecture periods 
+toward the beginning of the semester and more presentation and review days to
+ward the end of the semester. The book also assumes 1 to 2 hours of "homework
+" per class period, which includes readings, assignments, study, and projects
+. The book's philosophy is that as much will be learned about data science by
+ doing team homework projects as will be learned during the lectures.
+
+In the professional world, data science is a team sport. We designed the diff
+iculty and scope of the homework project for teams. At this level (high schoo
+l senior or first semester college freshman), it would be difficult for a sin
+gle individual to complete these assignments alone. We also assume there is a
+ place students can go to get help with the R programming language.
+Note to Contributors
+
+First, please register yourself with Wikibooks (and list yourself below), so 
+that we know who our co-contributors are. Also, please abide by the Wikibooks
+ Editing Guidelines, Manual of Style, and Policies and Guidelines. Thank you.
+
+Secondly, we only need basic, clear, straightforward information in each chap
+ter. We are not trying to be exhaustive or complete—the value of this book is
+ in the simple synthesis across subjects. There are other venues in which to 
+wax eloquent on the deepness and complexities of a particular subject. Please
+ place yourself in a "beginner's mind" as you make contributions. Please also
+ scope each chapter so that it can be taught in a one-hour class period. If t
+he chapter requires more than an hour to teach, it is probably too detailed.
+
+    To the extent possible, please use terms and concepts in the way in which
+ they are defined in the Wikipedia and Wiktionary. This way students can refe
+r to the corresponding Wikipedia / Wiktionary page to get a deeper understand
+ing of the concept.
+
+Thirdly, this is a cross-disciplinary book. We want to help people apply data
+ science to all fields. Therefore, we need a wide variety of simple examples 
+and simple exercises.
+
+Fourthly, please adhere to the simple structure of each chapter: Summary of M
+ain Points, Discussion, More Reading, Exercises, and References. We want the 
+More Reading section to link to on-line resources. The References section may
+ contain off-line resources. To start a new page, you should use the wiki mar
+kup from this prototype page.
+
+Fifthly, as with any Wikibook please feel free to make corrections, expand ex
+planations, and make additions where necessary, even if it is not "your" chap
+ter. Use the discussion page to explain changes that might be controversial.
+
+Sixthly, some syntax rules:
+
+    Please bold key terms and phrases the student should learn.
+    Put the name of functions and code snippets using the 'code' tags: <code>
+lm()</code>
+    Use in-line links [[ ]] to the Wikipedia, Wiktionary, WikiCommons, Wikibo
+oks, and other Wikimedia Foundation properties.
+    Use references (<ref> </ref>) to "external" sources—both on-line and off-
+line.
+        Use the citations templates to make citations : Template:Cite book, T
+emplate:Cite web, Template:Cite journal
+    When inserting R code into a page, please adhere to Google's R Style Guid
+e.[1]
+    If you want to add an image or graph, you should load it into the Commons
+ rather than uploading into Wikibooks.
+        If appropriate, add the tag {{Created with R}}) when you upload the g
+raph.
+    If using a different package than R standard packages, put the name of th
+e package in bold in parenthesis after each function : <code>MCMCprobit()</co
+de> ('''MCMCpack''')
+    You can use the third chapter Definitions of Data as an example of how to
+ craft a chapter.
+
+Finally, thank you so much for volunteering to be part of our our team!
+List of Co-Authors
+
+    Calvin Andrus
+    Jon Cook
+    Suresh Sood
+
+See also
+
+See the following Wikibooks for good follow-on texts to this introduction:
+
+    The Scientific Method - Scientific Method
+    Data Engineering - Relational Database Design, Data Structures, SQL
+    Software Engineering - The Science of Programming, R Programming
+    Mathematics - High School Mathematics Extensions
+    Statistical Analysis - Statistics, Statistical Analysis: An Introduction 
+Using R, Data Mining Algorithms in R
+    Visualization -
+    Hacking -
+
+References
+
+    "R Style Guide". Google, Inc. Retrieved 6 July 2012.
+
+Copyright Notice
+
+You are free:
+
+    to Share — to copy, distribute, display, and perform the work (pages from
+ this wiki)
+    to Remix — to adapt or make derivative works
+
+Under the following conditions:
+
+    Attribution — You must attribute this work to Wikibooks. You may not sugg
+est that Wikibooks, in any way, endorses you or your use of this work.
+    Share Alike — If you alter, transform, or build upon this work, you may d
+istribute the resulting work only under the same or similar license to this o
+ne.
+    Waiver — Any of the above conditions can be waived if you get permission 
+from the copyright holder.
+    Public Domain — Where the work or any of its elements is in the public do
+main under applicable law, that status is in no way affected by the license.
+    Other Rights — In no way are any of the following rights affected by the 
+license:
+
+        Your fair dealing or fair use rights, or other applicable copyright e
+xceptions and limitations;
+        The author's moral rights;
+        Rights other persons may have either in the work itself or in how the
+ work is used, such as publicity or privacy rights.
+
+    Notice — For any reuse or distribution, you must make clear to others the
+ license terms of this work.The best way to do this is with a link to the fol
+lowing web page.
+
+        http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+Categories:
+
+    Book:Data Science: An IntroductionShelf:ComputingShelf:EngineeringShelf:M
+athematicsShelf:ScienceShelf:Social sciences
+
+    This page was last edited on 2 April 2021, at 11:47.
+    Text is available under the Creative Commons Attribution-ShareAlike Licen
+se; additional terms may apply. By using this site, you agree to the Terms of
+ Use and Privacy Policy.
+
+    Privacy policy
+    About Wikibooks
+    Disclaimers
+    Code of Conduct
+    Developers
+    Statistics
+    Cookie statement
+    Mobile view
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+
+
+
+
+8. less
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ less f1.txt                                                              
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ ls                                                                       
+f1.txt  Prathik
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ less +G f1.txt
+
+
+9. cd(change directory)
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ cd Prathik                                                               
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ ls                                                                       
+aa  aaa  ACN  f2.txt  f3.txt  f6.txt  xxx  yyy
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ mkdir rrr                                                                
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ ls                                                                       
+aa  aaa  ACN  f2.txt  f3.txt  f6.txt  rrr  xxx  yyy
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cd rrr                                                                   
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr]
+└─$ ls                                                                       
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr]
+└─$ mkdir sss    
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr]
+└─$ cd sss 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr/sss]
+└─$ mkdir ttt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr/sss]
+└─$ cd ttt                                                           
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr]
+└─$ cd ..                                                                    
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ ls                                                                       
+aa  aaa  ACN  f2.txt  f3.txt  f6.txt  rrr  xxx  yyy
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cd -                                                                     
+/home/prathik/Desktop/Prathik/rrr
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/rrr]
+└─$ cd ~
+
+┌──(prathik㉿kali)-[~]
+└─$ ls                                                                       
+Desktop    Downloads  f5.txt  Pictures  reports    Videos
+Documents  f1.txt     Music   Public    Templates
+
+┌──(prathik㉿kali)-[~]
+└─$ cd /home/prathik/Desktop/Prathik  
+
+
+
+10. mkdir
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ mkdir abc 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ mkdir xyz xxx yyy
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ mkdir -p aaa/zzz                                      
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ ls                                                                       
+aa  aaa abc ACN  f2.txt  f3.txt  f6.txt  rrr  xxx xyz yyy
+
+
+
+11. find
+┌──(prathik㉿kali)-[~]
+└─$ find /home/prathik/Desktop/Prathik -name f3.txt
+/home/prathik/Desktop/Prathik/aaa/f3.txt
+/home/prathik/Desktop/Prathik/aa/f3.txt
+/home/prathik/Desktop/Prathik/f3.txt
+
+┌──(prathik㉿kali)-[~]                                                                                             
+└─$ find /home/prathik/Desktop/Prathik/ACN -type d                                                                 
+/home/prathik/Desktop/Prathik/ACN                                                                                  
+/home/prathik/Desktop/Prathik/ACN/https                                                                            
+/home/prathik/Desktop/Prathik/ACN/https/protocols
+
+┌──(prathik㉿kali)-[~]
+└─$ find /home/prathik/Desktop/Prathik/ACN -type f
+/home/prathik/Desktop/Prathik/ACN/https/protocols/osi.txt
+/home/prathik/Desktop/Prathik/ACN/https/protocols/tcp.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cp f2.txt f6.txt                                                         
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cat f2.txt f6.txt
+This is just for educational purpose
+This is just for educational purpose
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cp f2.txt rrr/                                                           
+
+                                                                  
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ mv f2.txt f10.txt                                                        
+
+
+
+                                                 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ tar -cvf abcd.tar aa                                                     
+aa/
+aa/abcd.tar
+aa/bb/
+aa/bb/cc/
+aa/f3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ tar -xvf abcd.tar                                                        
+aa/
+aa/abcd.tar
+aa/bb/
+aa/bb/cc/
+aa/f3.txt
+
+
+
+
+
+
+16. wc(word count)
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ wc f1.txt                                                                
+  210  2125 13886 f1.txt
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ wc -l f1.txt
+210 f1.txt
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ wc -w f1.txt                                                             
+2125 f1.txt
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ wc -m f1.txt                                                             
+13858 f1.txt
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ wc -c f1.txt                                                             
+13886 f1.txt
+
+
+
+17. head
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ head f1.txt                                                              
+This is a sample attack
+
+
+
+
+Wikibooks The Free Textbook Project
+
+    Donations
+    Create account
+    Log in
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ head -n 5 f1.txt                                                         
+This is a sample attack
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ head -c 20 f1.txt                                                        
+This is a sample att
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ head f3.txt f6.txt                                                       
+==> f3.txt <==
+hi this is related to nmap and exiftool.this all comes under osint framework.
+thankyougokgfskforg
+encryption
+decryption
+encapsulation
+decapsulation
+client 
+server
+24x7
+
+==> f6.txt <==
+This is just for educational purpose
+
+
+
+18. tail
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ tail f1.txt                                                              
+    Code of Conduct
+    Developers
+    Statistics
+    Cookie statement
+    Mobile view
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+
+
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ tail -n 5 f1.txt                                                         
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+
+
+
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ tail -c 25 f1.txt                                                        
+  Powered by MediaWiki
+
+
+
+
+19. cut
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ cut -c 1-5 f3.txt                                                        
+hi th
+thank
+encry
+decry
+encap
+decap
+clien
+serve
+24x7
+
+
+
+
+
+20. paste
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ paste f3.txt f6.txt                                                      
+hi this is related to nmap and exiftool.this all comes under osint framework.This is just for educational purpose
+thankyougokgfskforg     1
+encryption      2
+decryption      3
+encapsulation   4
+decapsulation   5
+client  6
+server  7
+24x7    8
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ paste -d '=' f3.txt f6.txt
+hi this is related to nmap and exiftool.this all comes under osint framework.=This is just for educational purpose
+thankyougokgfskforg=1
+encryption=2
+decryption=3
+encapsulation=4
+decapsulation=5
+client =6
+server=7
+24x7=8
+
+
+
+
+
+21. grep
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ grep "enc" f3.txt
+encryption
+encapsulation
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ grep -i "enc" f3.txt                                                     
+encryption
+encapsulation
+
+
+
+
+22.expr
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ expr 21 + 22                                                             
+43
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ expr 21 - 22                                                 
+-1
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ expr 21 \* 3                                                             
+63
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ expr 21 / 3                                                             
+7
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ expr 21 \> 22
+0
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik]
+└─$ expr length "Prathik"                                                    
+7
+
+
+
+
+
+23. chmod
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ sudo chmod 755 f3.txt
+[sudo] password for prathik: 
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ls -l                                                                    
+total 20
+-rw-rw-r-- 1 prathik prathik 10240 Feb 28 19:06 abcd.tar
+drwxrwxr-x 3 prathik prathik  4096 Feb 27 14:55 bb
+-rwxr-xr-x 1 prathik prathik   168 Feb 27 15:13 f3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ sudo chmod 644 f3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ls -l                                                                    
+total 20
+-rw-rw-r-- 1 prathik prathik 10240 Feb 28 19:06 abcd.tar
+drwxrwxr-x 3 prathik prathik  4096 Feb 27 14:55 bb
+-rw-r--r-- 1 prathik prathik   168 Feb 27 15:13 f3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ chmod u+x f3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ls -l                                                                    
+total 20
+-rw-rw-r-- 1 prathik prathik 10240 Feb 28 19:06 abcd.tar
+drwxrwxr-x 3 prathik prathik  4096 Feb 27 14:55 bb
+-rwxr--r-- 1 prathik prathik   168 Feb 27 15:13 f3.txt
+
+
+
+24.chown
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ sudo chown prathik f3.txt                                                
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ls -l                                                                    
+total 20
+-rw-rw-r-- 1 prathik prathik 10240 Feb 28 19:06 abcd.tar
+drwxrwxr-x 3 prathik prathik  4096 Feb 27 14:55 bb
+-rwxr--r-- 1 prathik prathik   168 Feb 27 15:13 f3.txt
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ chown -v                                                                 
+chown: missing operand
+Try 'chown --help' for more information.
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ls | wc -l                                                               
+3
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ passwd -S prathik                                                        
+prathik P 2026-02-14 0 99999 7 -1
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ usermod -l takku prathik                                                 
+usermod: user prathik is currently used by process 1046
+
+
+
+
+31. df (disk free)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ df                                                                       
+Filesystem       1K-blocks      Used Available Use% Mounted on
+udev               2352464         0   2352464   0% /dev
+tmpfs               491644       996    490648   1% /run
+/dev/sda1         67949912  20981092  43471348  33% /
+tmpfs              2458208         8   2458200   1% /dev/shm
+none                  1024         0      1024   0% /run/credentials/systemd-journald.service
+tmpfs              2458212      5832   2452380   1% /tmp
+Telegram_Desktop 498619716 223862460 274757256  45% /media/sf_Telegram_Desktop
+none                  1024         0      1024   0% /run/credentials/getty@tty1.service
+tmpfs               491640      2820    488820   1% /run/user/1000
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ df -h                                                                    
+Filesystem        Size  Used Avail Use% Mounted on
+udev              2.3G     0  2.3G   0% /dev
+tmpfs             481M  992K  480M   1% /run
+/dev/sda1          65G   21G   42G  33% /
+tmpfs             2.4G  8.0K  2.4G   1% /dev/shm
+none              1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs             2.4G  5.8M  2.4G   1% /tmp
+Telegram_Desktop  476G  214G  263G  45% /media/sf_Telegram_Desktop
+none              1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs             481M  2.8M  478M   1% /run/user/1000
+
+
+
+
+32. ps (process status)
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ps                                                                       
+    PID TTY          TIME CMD
+  11065 pts/1    00:00:00 bash
+  63975 pts/1    00:00:00 ps
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ ps -u prathik                                                            
+    PID TTY          TIME CMD
+   1022 ?        00:00:00 systemd
+   1024 ?        00:00:00 (sd-pam)
+   1046 ?        00:00:00 dbus-daemon
+   1047 ?        00:00:39 pipewire
+   1049 ?        00:00:00 gnome-keyring-d
+   1050 ?        00:00:00 mpris-proxy
+   1051 ?        00:00:00 wireplumber
+   1052 ?        00:00:00 pipewire
+   1053 ?        00:00:29 pipewire-pulse
+   1069 ?        00:00:00 xfce4-session
+   1137 ?        00:00:00 VBoxClient
+   1139 ?        00:00:00 VBoxClient
+   1145 ?        00:00:00 VBoxClient
+   1147 ?        00:00:03 VBoxClient
+   1153 ?        00:00:00 VBoxClient
+   1156 ?        00:00:21 VBoxClient
+   1169 ?        00:00:00 VBoxClient
+   1171 ?        00:00:02 VBoxClient
+   1188 ?        00:00:00 at-spi-bus-laun
+   1195 ?        00:00:26 dbus-daemon
+   1205 ?        00:00:12 at-spi2-registr
+   1213 ?        00:00:00 ssh-agent
+   1222 ?        00:00:00 gpg-agent
+   1231 ?        00:00:17 xfwm4
+   1236 ?        00:00:00 gvfsd
+   1242 ?        00:00:00 gvfsd-fuse
+   1261 ?        00:00:01 xfsettingsd
+   1267 ?        00:00:00 dconf-service
+   1268 ?        00:00:02 xfce4-panel
+   1277 ?        00:00:01 Thunar
+   1284 ?        00:00:01 xfdesktop
+   1289 ?        00:00:00 wrapper-2.0
+   1294 ?        00:00:11 wrapper-2.0
+   1295 ?        00:00:00 wrapper-2.0
+   1296 ?        00:00:10 wrapper-2.0
+   1297 ?        00:00:00 wrapper-2.0
+   1298 ?        00:00:00 wrapper-2.0
+   1299 ?        00:00:00 wrapper-2.0
+   1322 ?        00:00:00 wrapper-2.0
+   1341 ?        00:00:00 xfce4-notifyd
+   1343 ?        00:00:39 orca
+   1346 ?        00:00:00 nm-applet
+   1348 ?        00:00:00 applet.py
+   1355 ?        00:00:00 xfce4-power-man
+   1361 ?        00:00:00 xautoresize
+   1366 ?        00:00:00 polkit-mate-aut
+   1367 ?        00:00:00 xcape
+   1374 ?        00:00:00 xfce4-screensav
+   1378 ?        00:00:00 agent
+   1391 ?        00:00:00 blueman-applet
+   1407 ?        00:00:00 xiccd
+   1513 ?        00:00:00 gvfs-udisks2-vo
+   1552 ?        00:00:00 gvfs-goa-volume
+   1556 ?        00:00:00 obexd
+   1561 ?        00:00:00 gvfs-gphoto2-vo
+   1574 ?        00:00:00 gvfs-afc-volume
+   1584 ?        00:00:00 gvfs-mtp-volume
+   1586 ?        00:00:33 speech-dispatch
+   1612 ?        00:00:00 sd_espeak-ng-mb
+   1613 ?        00:00:01 sd_espeak-ng
+   1614 ?        00:00:00 gvfsd-metadata
+   1618 ?        00:00:00 gvfsd-trash
+   1630 ?        00:00:00 sd_dummy
+   1633 ?        00:00:00 sd_espeak-ng
+   3146 ?        00:00:03 qterminal
+   3148 ?        00:00:00 xdg-desktop-por
+   3155 ?        00:00:00 xdg-permission-
+   3163 ?        00:00:00 xdg-document-po
+   3174 ?        00:00:00 xdg-desktop-por
+   3181 pts/0    00:00:00 bash
+   9723 ?        00:01:41 firefox-esr
+   9728 ?        00:00:00 crashhelper
+   9792 ?        00:00:00 Socket Process
+   9824 ?        00:00:37 Privileged Cont
+   9831 ?        00:00:00 RDD Process
+   9884 ?        00:00:01 file:// Content
+   9913 ?        00:00:00 WebExtensions
+   9972 ?        00:00:00 Utility Process
+  10001 ?        00:00:05 Isolated Web Co
+  10033 ?        00:00:03 Web Content
+  10172 ?        00:00:03 Web Content
+  10471 ?        00:00:00 Web Content
+  11058 ?        00:00:18 qterminal
+  11065 pts/1    00:00:00 bash
+  44961 ?        00:00:00 gvfsd-network
+  44971 ?        00:00:00 gvfsd-dnssd
+  64156 pts/1    00:00:00 ps
+
+┌──(prathik㉿kali)-[~/Desktop/Prathik/aa]
+└─$ top                                                                      
+top - 20:07:41 up  1:54,  1 user,  load average: 0.12, 0.07, 0.04
+Tasks: 234 total,   1 running, 232 sleeping,   0 stopped,   1 zombie
+%Cpu(s):  0.3 us,  0.3 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 
+MiB Mem :   4801.2 total,    777.9 free,   1713.5 used,   2640.5 buff/cache  
+MiB Swap:   3687.0 total,   3687.0 free,      0.0 used.   3087.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ 
+    754 root      20   0  468144 183456  94112 S   1.3   3.7   1:11.44 
+  11058 prathik   20   0  798868  62116  51896 S   0.7   1.3   0:18.82 
+     29 root      rt   0       0      0      0 S   0.3   0.0   0:00.47 
+   1294 prathik   20   0  318148  70508  21908 S   0.3   1.4   0:11.12 
+   1296 prathik   20   0  272844  29508  22356 S   0.3   0.6   0:11.02 
+   9723 prathik   20   0 3126572 486848 193484 S   0.3   9.9   1:42.21 
+   9824 prathik   20   0 2507480 157032 105060 S   0.3   3.2   0:37.97 
+  10172 prathik   20   0 2433620  82296  68092 S   0.3   1.7   0:03.41 
+      1 root      20   0   24868  15340  11364 S   0.0   0.3   0:00.83 
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.02 
+     15 root      20   0       0      0      0 I   0.0   0.0   0:02.29 
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.03 
+     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.14 
+     19 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 
+     22 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 
+     23 root      rt   0       0      0      0 S   0.0   0.0   0:00.46 
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.02 
+     26 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 
+
+
+
+
+
+
+34. ssh(Secure Shell)
+┌──(prathik㉿kali)-[~]
+└─$ ssh mca @ 172.16.2.137
+mca @ 172.16.2.137's password:
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-139-generic x86_64)                                                                          

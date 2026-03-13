@@ -1,4 +1,4 @@
-I a)Create a directory named lab1, move into it, create a file data.txt, write some content using echo, and        display it using cat. (Commands: mkdir, cd, echo, cat)
+I a)Create a directory named lab1, move into it, create a file data.txt, write some content using echo, and display it using cat. (Commands: mkdir, cd, echo, cat)
 ┌──(prathik㉿kali)-[~/Desktop/Prathik]
 └─$ mkdir lab1
 

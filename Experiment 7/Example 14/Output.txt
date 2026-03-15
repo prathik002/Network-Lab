@@ -1,0 +1,8 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x command_line_argument.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./command_line_argument.sh Hello Linux
+        Script name: ./command_line_argument.sh
+        First argument: Hello
+        Second argument: Linux

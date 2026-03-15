@@ -1,0 +1,9 @@
+Example 2
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x Multiple Echo.sh
+ 
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./Multiple Echo.sh
+        Line 1: I am Prathik
+        Line 2: From Kodungallur
+        Line 3: Pursuing PG at ICET Mulavoor

@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x grade_classification.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./file.sh
+        Grade: B

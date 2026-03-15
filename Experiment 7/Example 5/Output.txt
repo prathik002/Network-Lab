@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x Using_numeric_variables.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./Using_numeric_variables.sh
+        Sum of 10 and 20 is: 30

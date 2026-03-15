@@ -1,0 +1,10 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x numbers_1_to_5.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./numbers_1_to_5.sh
+        Number is 1
+        Number is 2
+        Number is 3
+        Number is 4
+        Number is 5

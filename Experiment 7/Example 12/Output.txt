@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x hello_function.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./hello_function.sh
+        Welcome to Linux

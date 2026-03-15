@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x n_num_using_while_loop.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./n_num_using_while_loop.sh
+        1 2 3 4 5

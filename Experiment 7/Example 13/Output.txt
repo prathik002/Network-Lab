@@ -1,0 +1,7 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x basic_add_and_subtract.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./basic_add_and_subtract.sh
+        Addition of 20 + 10 = 30
+        Subtraction of 20 - 10 = 10

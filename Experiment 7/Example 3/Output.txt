@@ -1,0 +1,10 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x EnvironmentVariables.sh
+ 
+ 
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./EnvironmentVariables.sh
+        Home Directory : /home/prathik
+        Current User   : prathik
+        Current Shell  : /bin/bash
+        Working Dir    : /home/prathik/Desktop

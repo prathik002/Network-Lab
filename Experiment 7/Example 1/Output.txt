@@ -1,0 +1,7 @@
+Example 1
+Output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x Hello World.sh
+ 
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./Hello World.sh
+        Welcome to Linux Shell Scripting

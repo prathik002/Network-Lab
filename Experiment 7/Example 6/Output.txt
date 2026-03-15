@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x Check_number_is_+ve.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./Check_number_is_+ve.sh
+        10 is a positive number

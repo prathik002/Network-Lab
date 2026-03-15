@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x check_even_or_odd.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./check_even_or_odd.sh
+        7 is Odd

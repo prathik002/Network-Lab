@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x output_in_single_line.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./output_in_single_line.sh
+        1 2 3 4 5

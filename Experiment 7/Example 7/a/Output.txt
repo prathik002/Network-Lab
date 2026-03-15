@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x check_num_greater_than_5.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./check_num_greater_than_5w.sh
+        Less than or equal to 5

@@ -1,0 +1,6 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x creating_and_running_bash_script.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./creating_and_running_bash_script.sh
+        Hello Prathik Vasant Pisal

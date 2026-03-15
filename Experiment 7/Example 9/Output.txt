@@ -1,0 +1,10 @@
+output: ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ chmod +x first_n_num_using_forloop.sh
+
+        ┌──(prathik㉿kali)-[~/Desktop]
+        └─$ ./first_n_num_using_forloop.sh
+        1
+        2
+        3
+        4
+        5

@@ -1,0 +1,8 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 9]
+└─$ chmod +x largest.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 9]
+└─$ ./largest.sh
+Enter three numbers:
+22 96 12
+Largest number is: 96

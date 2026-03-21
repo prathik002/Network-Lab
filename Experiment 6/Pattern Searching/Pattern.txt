@@ -1,0 +1,3 @@
+Linux is powerful.
+Linux supports multiuser environment.
+Students learn Linux commands.

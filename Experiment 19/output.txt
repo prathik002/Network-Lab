@@ -1,0 +1,9 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 19]
+└─$ chmod +x compare.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 19]
+└─$ ./compare.sh
+Enter first number: 99
+Enter second number: 47
+99 is greater than 47
+Multiplication = 4653

@@ -1,0 +1,7 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 10]
+└─$ chmod +x leapyear.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 10]
+└─$ ./leapyear.sh
+Enter a year: 2029
+2029 is not a leap year

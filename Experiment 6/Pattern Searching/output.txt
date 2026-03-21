@@ -1,0 +1,2 @@
+┌──(prathik㉿kali)-[~/Desktop]
+└─$ vi Pattern.txt

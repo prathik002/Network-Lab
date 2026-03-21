@@ -1,0 +1,9 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 12]
+└─$ chmod +x largest.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 12]
+└─$ ./largest.sh
+Enter first number: 36
+Enter second number: 78
+Enter third number: 115
+115 is the largest number

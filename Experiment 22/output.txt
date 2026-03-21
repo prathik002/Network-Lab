@@ -1,0 +1,12 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 22]
+└─$ chmod +x arithematic.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 22]
+└─$ ./arithematic.sh
+Enter first number: 22
+Enter second number: 12
+Select operation:
+1. Addition
+2. Subtraction
+Enter option: 1
+Addition = 34

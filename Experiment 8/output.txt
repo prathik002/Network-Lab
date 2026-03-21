@@ -1,0 +1,8 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 8]
+└─$ chmod +x evenodd.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 8]
+└─$ ./evenodd.sh
+Enter a number:
+25
+25 is Odd

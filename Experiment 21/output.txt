@@ -1,0 +1,7 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 21]
+└─$ chmod +x palindrome.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 21]
+└─$ ./palindrome.sh
+Enter a number:1441
+Palindrome number

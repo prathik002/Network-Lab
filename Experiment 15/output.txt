@@ -1,0 +1,8 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 15]
+└─$ chmod +x Fibonacci.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 15]
+└─$ ./Fibonacci.sh
+Enter number of terms: 12 
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34 55 89

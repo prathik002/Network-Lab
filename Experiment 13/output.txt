@@ -1,0 +1,4 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 13]
+└─$ ./sum.sh
+Enter n: 9
+Sum of first 9 natural numbers is 45

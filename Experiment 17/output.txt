@@ -1,0 +1,10 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 17]
+└─$ chmod +x salary.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 17]
+└─$ ./salary.sh
+Enter basic salary: 25000
+Basic Salary = 25000
+DA = 10000
+HRA = 5000
+Gross Salary = 40000

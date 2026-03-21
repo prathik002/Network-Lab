@@ -1,0 +1,10 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 16]
+└─$ chmod +x swap.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 16]
+└─$ ./swap.sh
+Enter a: 42
+Enter b: 76
+After interchange:
+First number = 76
+Second number = 42

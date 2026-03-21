@@ -1,0 +1,10 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 23]
+└─$ chmod +x menu.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 23]
+└─$ ./menu.sh
+Enter a number: 2130
+1. Sum of digits
+2. Reverse of number
+Enter your choice:1
+Sum of digits = 6

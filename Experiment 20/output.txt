@@ -1,0 +1,7 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 20]
+└─$ chmod +x reverse.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 20]
+└─$ ./reverse.sh
+Enter a five digit number: 51790 
+Reversed number = 9715

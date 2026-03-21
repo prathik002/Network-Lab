@@ -1,0 +1,7 @@
+┌──(prathik㉿kali)-[~/Desktop/Experiment 14]
+└─$ chmod +x factorial.sh
+
+┌──(prathik㉿kali)-[~/Desktop/Experiment 14]
+└─$ ./factorial.sh
+Enter a number: 12
+Factorial of 12 is 479001600
